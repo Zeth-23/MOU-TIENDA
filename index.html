@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MOU - Tienda Online</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="logo">🛒 MOU</div>
+    <nav>
+      <ul>
+        <li><a href="#electronicos">Electrónicos</a></li>
+        <li><a href="#videojuegos">Videojuegos</a></li>
+        <li><a href="#hogar">Hogar</a></li>
+        <li><a href="#mecanica">Mecánica</a></li>
+        <li><a href="#ropa">Ropa</a></li>
+        <li><a href="#accesorios">Accesorios</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="hero">
+      <h1>Bienvenido a MOU</h1>
+      <p>Todo lo que necesitas, en un solo lugar</p>
+    </section>
+
+    <section class="productos" id="electronicos">
+      <h2>Electrónicos</h2>
+      <div class="grid">
+        <div class="item">
+          <img src="https://via.placeholder.com/200x150" alt="Laptop">
+          <h3>Laptop HP</h3>
+          <p>$650.00</p>
+          <button onclick="agregarAlCarrito('Laptop HP', 650.00)">Agregar al carrito</button>
+        </div>
+        <div class="item">
+          <img src="https://via.placeholder.com/200x150" alt="Audífonos">
+          <h3>Audífonos Bluetooth</h3>
+          <p>$29.99</p>
+          <button onclick="agregarAlCarrito('Audífonos Bluetooth', 29.99)">Agregar al carrito</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Puedes repetir más secciones igual que esta para videojuegos, hogar, etc. -->
+
+    <section id="carrito">
+      <h2>🛒 Carrito de Compras</h2>
+      <ul id="lista-carrito"></ul>
+      <p><strong>Total:</strong> $<span id="total">0.00</span></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 MOU - Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>
